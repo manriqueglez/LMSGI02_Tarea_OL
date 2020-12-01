@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding; 0;
+	}
+
+body{
+	background-image: url("../imagenes/fondo2.jpg");
+	background-size: cover;
+	font-family: 'Orbitron', sans-serif;
+	}
+	
+	
+
+/*PROPIEDADES COMUNES*/
+
+header, .main, footer{	
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+/*HEADER*/
+
+header{
+	align-items: center;
+	justify-content: center;
+	}
+	
+#logo{
+	float: left;
+	padding-left: 10%;
+	padding-right: 40;
+}
+
+
+
+/*NAV BAR*/
+
+header nav {	
+	background: #0f084b;
+	overflow: hidden;
+    }
+
+header nav ul {	
+	list-style: none;
+	}
+
+header nav ul li{	
+	float : left;
+	}
+
+header nav ul li a {	
+	padding: 30px 50px 30px;
+	margin-top: 10;
+	display: block;	
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	}
+
+header nav ul li a:hover{	
+	background-color: #a6cfd5;
+	}
+	
+	
+
+/*MAIN*/
+
+.main {
+	height: auto;
+	}
+	
+	
+	
+/*FOOTER*/
+
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 3%;
+	background: linear-gradient(to right,#0f084b,#26408b);
+	color: black;
+	text-align: center;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 15px;
+	}
+
+
+
+/*LINKS*/
+
+a:link {
+      color: white;
+  }
+  
+a:visited {
+      color: white;
+  }
+  
+a:hover {
+      color: black;
+  }
+  
+a:active {
+      color: white;
+  }
+  
+
+

@@ -1,0 +1,166 @@
+<html>
+	<head>
+		<title>
+		Funcionamiento del Big Data
+		</title>
+		<link rel="stylesheet" href="../CSS/estilo_funciona.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			<div id="logo"><a href="../index.html" title="Página principal"><img src="../imagenes/logo.png" width="150" alt="logo"/></a></div>
+			<nav>
+				<ul>
+					<li><a href="historia.html">HISTORIA</a>
+					<li><a href="que_es.html">¿QUÉ ES?</a>
+					<li><a href="funcionamiento.html">¿CÓMO FUNCIONA?</a>
+					<li><a href="aplicaciones.html">APLICACIONES</a>
+				</ul>
+			</nav>
+		</header>
+		<aside>
+			<ul>
+					<li><a href="#captura">Captura</a></li>
+					<li><a href="#transformacion">Transformación</a></li>
+					<li><a href="#almacenamiento">Almacenamiento</a></li>
+					<li><a href="#analisis">Análisis</a></li>
+					<li><a href="#visualizacion">Visualización</a></li>
+					<li><a href="funcionamiento.html"> ▲ </a></li>
+			</ul>
+		</aside>
+		<section class="main">
+			<article id="entrada"><p>¿CÓMO FUNCIONA?</p></article>
+			<div id="capturaDatos" class="image"></div>
+			<article id="captura">
+				<h2>Captura</h2>
+				<p>¿De dónde provienen todos estos datos? Los fabricamos directa e indirectamente segundo tras segundo. 
+				Un iPhone hoy en día tiene más capacidad de cómputo que la NASA cuando el ser humano llegó a la Luna, 
+				por lo que la cantidad de datos generados por persona y en unidad de tiempo es muy grande. 
+				Catalogamos la procedencia de los datos según las siguientes categorías:​</p>
+				<p>
+					<ul>
+						<li><strong>Generados por las propias personas.</strong> El hecho de enviar correos electrónicos o mensajes por WhatsApp,
+						publicar un estado en Facebook, publicar relaciones laborales en Linkedin, tuitear contenidos o 
+						responder a una encuesta por la calle son cosas que hacemos a diario y que crean nuevos datos
+						y metadatos que pueden ser analizados. Se estima que cada minuto al día se envían más de 200 millones de correos electrónicos,
+						se comparten más de 700 000 piezas de contenido en Facebook, se realizan dos millones de búsquedas en Google o
+						se editan 48 horas de vídeo en YouTube. Por otro lado, las trazas de utilización en un sistema ERP, 
+						incluir registros en una base de datos o introducir información en una hoja de cálculo son otras formas de generar estos datos.</li>
+						<li><strong>Obtenidas a partir de transacciones.</strong> La facturación, tarjetas de fidelización, las llamadas telefónicas, 
+						las conexiones torres de telefonía, los accesos a wifis públicas, el pago con tarjetas de crédito
+						o las transacciones entre cuentas bancarias generan información que tratada puede ser datos relevantes.
+						Por ejemplo transacciones bancarias: Lo que el usuario conoce como un ingreso de X euros, 
+						el sistema lo capturará como una acción llevada a cabo en una fecha y momento determinado, 
+						en un lugar concreto, entre unos usuarios registrados, y con ciertos metadatos.</li>
+						<li><strong>Mercadotecnia electrónica y web.</strong> Se genera una gran cantidad de datos cuando se navega por internet.
+						Con la web 2.0 se ha roto el paradigma webmaster-contenido-lector y los mismos usuarios se convierten en 
+						creadores de contenido gracias a su interacción con el sitio. Existen muchas herramientas de seguimiento utilizadas
+						en su mayoría con fines de mercadotecnia y análisis de negocio. Los movimientos de ratón quedan grabados en mapas 
+						de calor y queda registro de cuánto pasamos en cada página y cuándo las visitamos.</li>
+						<li><strong>Obtenidos a partir de las interacciones máquina a máquina (M2M).</strong> Son datos obtenidos a partir de la recogida de métricas 
+						obtenidas desde dispositivos (medidores, sensores de temperatura, de luz, de altura, de presión, de sonido…) que transforman 
+						las magnitudes físicas o químicas y las convierten en datos. Existen desde hace décadas, pero la llegada de las comunicaciones
+						inalámbricas (wifi, Bluetooth, RFID, etc.) ha revolucionado el mundo de los sensores. Algunos ejemplos son los GPS en la automoción,
+						los sensores de signos vitales (muy útil para seguros de vida), pulseras en los festivales, monitorizadores del funcionamiento 
+						y conducción de autoḿoviles (se obtiene información muy útil para la aseguradoras)​, los smartphone (son sensores de localización).</li>
+						<li><strong>Datos biométricos recolectados.</strong> En general provienen de servicios de seguridad, defensa y servicios de inteligencia. 
+						Son cantidades de datos generados por lectores biométricos como escáneres de retina, escáneres de huellas digitales,
+						o lectores de cadenas de ADN. El propósito de estos datos es proporcionar mecanismos de seguridad y suelen estar 
+						custodiados por los ministerios de defensa y departamentos de inteligencia. Un ejemplo de aplicación es el cruce de ADN entre 
+						una muestra de un crimen y una muestra en nuestra base de datos.</li>
+					</ul>
+				</p>
+			</article>
+			<div id="transformar" class="image"></div>
+			<article id="transformacion">
+				<h2>Transformación</h2>
+				<p>Una vez encontradas las fuentes de los datos necesarios, muy posiblemente dispongamos de un sinfín de tablas de origen que no estarán relacionadas. 
+				El siguiente objetivo es hacer que los datos se recojan en un mismo lugar y darles un formato adecuado.</p>
+				<p>Aquí entran en juego las plataformas extraer, transformar y cargar (ETL). Su propósito es extraer los datos de las diferentes fuentes y sistemas,
+				para después hacer transformaciones (conversiones de datos, limpieza de datos sucios, cambios de formato, etc.)
+				y finalmente cargar los datos en la base de datos o almacén de datos especificada. Un ejemplo de plataforma ETL es el Pentaho Data Integration,
+				más concretamente su aplicación <i>Spoon</i>.</p>
+			</article>
+			<div id="nosql" class="image"></div>
+			<article id="almacenamiento">
+				<h2>Almacenamiento NoSQL</h2>
+				<p>El término NoSQL se refiere a Not Only SQL (no solo SQL) y son sistemas de almacenamiento que no cumplen con el esquema entidad-relación.
+				Proveen un sistema de almacenamiento mucho más flexible y concurrente y permiten manipular grandes cantidades de información 
+				de manera mucho más rápida que las bases de datos relacionales.</p>
+				<p>Distinguimos cuatro grandes grupos de bases de datos NoSQL:</p>
+				<p>
+					<ul>
+						<li><strong>Almacenamiento clave-valor (key-value):</strong> los datos se almacenan de forma similar a los mapas o diccionarios de datos,
+						donde se accede al dato a partir de una clave única. Los valores (datos) son aislados e independientes entre ellos, 
+						y no son interpretados por el sistema. Pueden ser variables simples como enteros o caracteres, u objetos.
+						Por otro lado, este sistema de almacenamiento carece de una estructura de datos clara y establecida,
+						por lo que no requiere un formateo de los datos muy estricto.</li>
+						<li><strong>Almacenamiento documental:</strong>las bases de datos documentales guardan un gran parecido con las bases de datos Clave-Valor,
+						diferenciándose en el dato que guardan. Si en el anterior no se requería una estructura de datos concreta, 
+						en este caso guardamos datos semiestructurados. Estos datos pasan a llamarse documentos, y pueden estar formateados en XML,
+						JSON, Binary JSON o el que acepte la misma base de datos. Todos los documentos tienen una clave única con la que pueden
+						ser accedidos e identificados explícitamente. Estos documentos no son opacos al sistema, por lo que pueden ser interpretados
+						y lanzar queries sobre ellos.​ Un ejemplo que aclare cómo se usa lo encontramos en un blog: se almacena el autor, la fecha, 
+						el título, el resumen y el contenido del post.</li>
+						<li><strong>Almacenamiento en grafo:</strong>las bases de datos en grafo rompen con la idea de tablas y se basan en la teoría de grafos,
+						donde se establece que la información son los nodos y las relaciones entre la información son las aristas,
+						​ algo similar al modelo relacional. Su mayor uso se contempla en casos de relacionar grandes cantidades de datos
+						que pueden ser muy variables. Por ejemplo, los nodos pueden contener objetos, variables y atributos diferentes en 
+						unos y otros. Las operaciones JOIN se sustituyen por recorridos a través del grafo, y se guarda una lista de adyacencias
+						entre los nodos. Encontramos un ejemplo en las redes sociales: en Facebook cada nodo se considera un usuario, 
+						que puede tener aristas de amistad con otros usuarios, o aristas de publicación con nodos de contenidos. 
+						Soluciones como Neo4J y GraphDB65​ son las más conocidas dentro de las bases de datos en grafo.</li>
+						<li><strong>Almacenamiento orientado a columnas:</strong>por último, este almacenamiento es parecido al documental. Su modelo de datos es definido como 
+						«un mapa de datos multidimensional poco denso, distribuido y persistente». Se orienta a almacenar datos con
+						tendencia a escalar horizontalmente, por lo que permite guardar diferentes atributos y objetos bajo una misma clave.
+						A diferencia del documental y el clave-valor, en este caso se pueden almacenar varios atributos y objetos,
+						pero no serán interpretables directamente por el sistema. Permite agrupar columnas en familias y guardar la
+						información cronológicamente, mejorando el rendimiento. Esta tecnología se acostumbra a usar en casos con 100 o 
+						más atributos por clave. Su precursor es BigTable de Google, pero han aparecido nuevas soluciones como HBase o HyperTable.</li>
+					</ul>
+				</p>
+			</article>
+			<article id="analisis">
+				<h2>Análisis de los datos</h2>
+				<p>El análisis permite mirar los datos y explicar lo que esta pasando. Teniendo los datos necesarios almacenados según diferentes
+				tecnologías de almacenamiento, nos daremos cuenta que necesitaremos diferentes técnicas de análisis de datos como las siguientes:</p>
+				<p>
+					<ul>
+						<li><strong>Asociación:</strong> permite encontrar relaciones entre diferentes variables. Bajo la premisa de causalidad, se pretende encontrar
+						una predicción en el comportamiento de otras variables. Estas relaciones pueden ser los sistemas de ventas cruzadas 
+						en los comercios electrónicos.</li>
+						<li><strong>Minería de datos <i>(data mining)</i>:</strong> tiene como objetivo encontrar comportamientos predictivos.
+						Engloba el conjunto de técnicas que combina métodos estadísticos y de aprendizaje automático con almacenamiento en bases de datos.
+						Está estrechamente relacionada con los modelos utilizados para descubrir patrones en grandes cantidades de datos.</li>
+						<div id="video"><iframe src="https://www.youtube.com/embed/ueAaIEr0PY4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<li><strong>Agrupación <i>(clustering)</i>:</strong> el análisis de clústeres es un tipo de minería de datos que divide grandes grupos 
+						de individuos en grupos más pequeños de los cuales no conocíamos su parecido antes del análisis. 
+						El propósito es encontrar similitudes entre estos grupos, y el descubrimiento de nuevos, conociendo 
+						cuáles son las cualidades que lo definen. Es una metodología apropiada para encontrar relaciones
+						entre resultados y hacer una evaluación preliminar de la estructura de los datos analizados. 
+						Existen diferentes técnicas y algoritmos de clusterización.​</li>
+						<div id="video"><iframe src="https://www.youtube.com/embed/aUPRixo1jFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<li><strong>Análisis de texto <i>(text analytics)</i>:</strong> gran parte de los datos generados por las personas son textos, como correos,
+						búsquedas web o contenidos. Esta metodología permite extraer información de estos datos y así modelar
+						temas y asuntos o predecir palabras</li>
+					</ul>
+				</p>
+			</article>
+			<article id="visualizacion">
+				<h2>Visualización de datos</h2>
+				<p>Mondrian es una plataforma que permite visualizar la información a través de los análisis llevados a cabo sobre los datos que disponemos.
+				Con esta plataforma se intenta llegar a un público más concreto, y una utilidad más acotada como un cuadro de mando integral de una organización.
+				En los últimos años se han generalizado otras plataformas como Tableau, Power BI y Qlik.</p>
+				<p>Por otro lado, las infografías se han vuelto un fenómeno viral, donde se recogen los resultados de los diferentes análisis sobre nuestros datos,
+				y son un material atractivo, entretenido y simplificado para audiencias masivas.</p>
+			</article>
+		</section>
+		<footer>
+			<p><a href="mailto:manriqueglez@gmail.com">manriqueglez@gmail.com</a> - <a href="about.html">About me</a></p>
+		</footer>		
+	</body>
+</html>
